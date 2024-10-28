@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  width: 70%; /* Ajustez la largeur selon vos besoins */
+  height: 70vh; /* Hauteur de 70% de la hauteur de la fenêtre */
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 1rem;
+  margin-top: 10rem; /* Marge supérieure */
+  animation: fadeIn 5s ease; /* Animation de fondu au chargement */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column; /* Affichage en colonne pour centrer verticalement */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  height: 70%; /* Hauteur de 70% du conteneur principal */
+  width: 50%; /* Largeur de 50% du conteneur principal */
+  border: solid 2px; /* Ajoutez votre style de bordure ici */
+  border-radius: 1rem;
+  animation: slideIn 2s ease; /* Animation de glissement au chargement */
+}
+
+.question-container p {
+  font-size: 2rem; /* Taille du texte augmentée */
+}
+
+#options {
+  display: flex;
+  flex-direction: row; /* Afficher les options en ligne */
+  align-items: center; /* Centrer horizontalement */
+  justify-content: space-around; /* Espacement égal entre les options */
+  animation: fadeIn 12s ease; /* Animation de fondu au chargement */
+}
+
+button {
+  margin-bottom: 10px; /* Marge inférieure pour les boutons */
+  font-size: 2rem; /* Taille du texte des options augmentée */
+  margin: 2rem;
+}
+
+
+.timer {
+  font-size: 2rem; /* Augmenter la taille de la police */
+  display: flex;
+  align-items: center;
+}
+
+.timer svg {
+  margin-right: 0.5rem; /* Ajouter un peu d'espace entre l'icône et le texte */
+}
+@keyframes timerAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.timer {
+  font-size: 2rem; /* Augmenter la taille de la police */
+  display: flex;
+  align-items: center;
+  animation: timerAnimation 1s linear infinite; /* Appliquer l'animation */
+}
+
+.timer svg {
+  margin-right: 0.5rem; /* Ajouter un peu d'espace entre l'icône et le texte */
+}

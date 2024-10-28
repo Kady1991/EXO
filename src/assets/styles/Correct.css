@@ -1,0 +1,39 @@
+.feed-correct-container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .video-container {
+    margin-bottom: 20px;
+  }
+  
+  .video-container video {
+    width: 100%;
+  }
+  
+  .paragraph {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .buttons-container button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #2ecc71; /* Vert */
+    color: #fff;
+  }
+  
+  .buttons-container button:hover {
+    background-color: #27ae60; /* Vert plus foncé au survol */
+  }
+  
